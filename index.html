@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <style>
+        #content {
+            margin: 40px;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 18px;
+
+        }
+
+        ul li dl dt dd {
+            font-size: 18px;
+        }
+
+        #heading {
+            background-color: gray;
+            color: white;
+        }
+
+        table tr td {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .subHeading {
+            text-align: center;
+            background-color: rgb(0, 255, 72);
+        }
+
+        .sub_Heading {
+            color: rgb(215, 46, 24);
+        }
+
+        #semantic
+        {
+            margin: auto;
+            width: 50%;
+            margin-top: 30px;
+            border: 1px solid black;
+            height: 400px;
+           text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1 align="center" id="heading">HTML NOTES</h1>
+        <hr>
+        <!-- -------------------------------------Introduction---------------------------------------- -->
+        <h2 class="subHeading">Introduction</h2>
+        <ul>
+            <li>HTML is the standard markup language for web pages</li>
+            <li>With HTML you can create your own website.</li>
+            <li>HTML is use to create a structure of the website.</li>
+            <li>for example = structure of a car </li>
+            <li>then CSS is apply to make the structure more beautiful or attractive .</li>
+        </ul>
+        <hr>
+        <!-- -------------------------------Heading in html ------------------------------------ -->
+        <h2 class="subHeading">Heading in HTML</h2>
+        <p>There are 6 Heading elements in HTML these are :-</p>
+        <ul>
+            <li>h1</li>
+            <li>h2</li>
+            <li>h3</li>
+            <li>h4</li>
+            <li>h5</li>
+            <li>h6</li>
+        </ul>
+        <!--U [ <u></u> ] tag is for underline-->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <hr>
+        <!-- ----------Paragrap tag / lorem------------------------------ -->
+        <h2 class="subHeading">Paragraph , Strong & lorem tag in HTML</h2>
+        <p>P tag is use to add paragraph in HTML</p>
+        <p>strong tag is use to bold the text in <strong>HTML</strong></p>
+        <p>lorem tag is use to inserts a specific amount of random text. </p>
+        <ul>
+            <li>
+                <p>e.g = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ipsa.</p>
+            </li>
+        </ul>
+        <hr>
+
+        <!-- ---------------------em , br , nbsp , sup ,sub , pre , u tag , image tag-----------------------  -->
+
+        <h2 class="subHeading">Some imp tags</h2>
+
+        <dl>
+            <dt><strong>em tag</strong></dt>
+            <dd>- the content inside the em tag is typically displayed in <strong><em>italic</em></strong>.</dd> <br>
+
+            <dt><strong>br tag</strong></dt>
+            <dd>- br tag insert a single line break. it is self closing tag</dd><br>
+
+            <dt><strong>nbsp tag</strong></dt>
+            <dd>- nbsp is stand for Non-breaking Space ,it is use for space between the text</dd><br>
+
+            <dt><strong>Sup tag</strong></dt>
+            <dd>- superscript text it appears half character above the normal line. or power
+                <br> <b>e.g - X <sup>2</sup></b>
+            </dd><br>
+
+            <dt><strong>Sub tag</strong></dt>
+            <dd>- sub tag is use to add subscript text to the html document
+                <br><b>e.g -
+                    H<sub>2</sub>O</b>
+            </dd><br>
+
+            <dt><strong>pre tag</strong></dt>
+            <dd>- pre tag is preformatted text element is displayed same assitice the text
+                copied and paste</dd><br>
+
+            <dt><strong>U tag</strong></dt>
+            <dd>- is use for Underline the text.</dd><br>
+
+            <dt><strong>Copyright (&copy ;)</strong></dt>
+            <dd>- It shows the symbol &copy; on the screen</dd><br>
+
+            <dt><strong>mark tag</strong></dt>
+            <dd>- It is used to highlight some part of the text for quick reference inside another element. <br>
+                  e.g - This tag was introduced in <mark>HTML5</mark></dd><br>
+
+            <dt><strong>image tag</strong></dt>
+            <dd>- image tag is use to insert the image in the website,<br>
+                which have some attribute like (src) source attribute, (alt) alternate text attribute (width,height)
+                width & height attribute. <br>
+                source is path of a image , alternat text is a text appear when because of some reason the image is not
+                display on the page then the text shows that a image present here</dd><br>
+        </dl>
+
+        <!-- -------------Using image tag ---------------------  -->
+
+        <div align="center">
+            <h3>Using img tag (image tag)</h3>
+            <img src="img.jpeg" alt="image" width="400" height="300" />
+        </div><br>
+
+        <!-- --------------Attribute ---------------------------------- -->
+        <h3>Attribute- Attribute is an property of an element</h3>
+
+        <hr>
+
+        <!-- ---------------------------align attribute----------------------- -->
+        <h2 class="subHeading">align attribute</h2>
+        <p>align="center" attribute is use to center the text or a section , it is written in opening tag, it work
+            on a
+            block element</p>
+        <!-- --------------------------Types of element------------------------ -->
+        <h3>Two types of elements</h3>
+        <h3>1. Block level element</h3>
+        <p>Block level element always starts on a new line,and the browsers automatically add some space or margin
+            before and after the element. <br> Block level element cover full width available. e.g = paragraph and
+            division tag etc</p>
+        <h3>2. inline element</h3>
+        <p>Inline element does not start on a new line. An Inline element only takes up as much width as necessary.
+            e.g
+            = span , a or button tag etc</p>
+        <hr>
+        <!-- ----------------------List in HTML------------------------------- -->
+        <h2 class="subHeading">Lists in HTML </h2>
+        <p>HTML lists allow web developers to group a set of related items in lists</p>
+        <ol>
+            <li><strong>Ordered HTML list</strong>
+                <p>An ordered list starts with the ol tag. Each list item starts with the li tag. the list items
+                    will be
+                    marked with number (roman number , ABC) by default</p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 4</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </li><br>
+            <li><strong>Unordered HTML list</strong>
+                <p>An unordered list starts with the ul tag. Each list item starts with the li tag. the list items
+                    will
+                    be marked with bullets (small black circle) by default</p>
+
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+            </li><br>
+
+            <li><strong>Nested HTML list</strong>
+                <p>Nested list - list inside the list</p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2
+                        <ul>
+                            <li>A Item</li>
+                            <li>B Item</li>
+                        </ul>
+                    </li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ol>
+            </li>
+
+            <br>
+            <li><strong>Description HTML lists</strong>
+                <p>HTML also supports decription lists. <br>
+                    A description list is a list of terms, with a description of each term. <br>
+                    The dl tag defines the description list , the dt tag defines the term(name), and the dd tag
+                    describe
+                    each term. <br>
+                    e.g :-
+                </p>
+
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>- White cold drink</dd>
+                </dl>
+
+            </li>
+
+
+        </ol>
+
+        <hr>
+
+        <!-- -------------------------Div tag in HTML---------------------------- -->
+        <h2 class="subHeading">Div tag in HTML</h2>
+        <p>The div tag defines a division or a section in an HTML document. <br>
+            div tag is used as a container for HTML elements - which is then style with CSS <br>
+            The div tag is easily styled by using the class or id attribute.</p>
+
+        <hr>
+        <!-- --------------------------HTML Layout Element(Semantic Element)-------------------- -->
+        <h2 class="subHeading">HTML Layout Elements (Semantic Elements)</h2>
+        <p>HTML has several semantic elements that define the different parts of a web page.</p>
+        <dl>
+            <dt>header</dt>
+            <dd>- Defines a header for a document or a section</dd>
+            <dt>nav</dt>
+            <dd>- Defines a set of navigation link.</dd>
+            <dt>section</dt>
+            <dd>- Defines a section in a document</dd>
+            <dt>article</dt>
+            <dd>- Defines an independent, self-contained content</dd>
+            <dt>aside</dt>
+            <dd>- Defines content aside from the content (like a sidebar)</dd>
+            <dt>footer</dt>
+            <dd>- Defines a footer for a document or a section</dd>
+            <dt>details</dt>
+            <dd>- Defines additional details that the user can open and close on demand</dd>
+            <dt>summary</dt>
+            <dd>- Defines a heading for the details element</dd>
+        </dl>
+        <hr>
+
+        <!-- ----------------------Hyper link (a tag)-------------------- -->
+        <h2 class="subHeading">Hyper link in HTML (a tag)</h2>
+        <p>HTML links are hyperlinks. <br>
+            <strong> href stands for</strong> hyper reference . <br>
+
+            you can click on a link and jump to another document. <br>
+            when you move the mouse over a link , the mouse arrow will turn into a little hand.
+        </p>
+        <p><strong>Note : </strong> A link does not have to be text. A link can be an image or any other HTML
+            element
+        </p>
+        <p>The HTML a tag defines a hyperlink .</p>
+        <dl>
+            <dt>syntax of a tag</dt>
+            <dd>
+                < a href=" "> Link text < /a>
+            </dd>
+        </dl>
+        <p>href attribute which indicates the link's destination. <br>
+        </p>
+        <h4>By default the linked page will be displayed in th current browser window . to change this, we must
+            specify
+            another target for the link</h4>
+        without any target = <a href="https://www.w3schools.com/">Visit W3Schools.com!</a><br>
+        <p><strong>target attribute</strong> specifies where to open the linked document</p>
+        <dl>
+            <dt>_self</dt>
+            <dd>Default(opens the document in the same window/tab as it was clicked) <br>
+                Self attribute = <a href="https://cybrom.com/" target="_self">Visit Cybrom Website</a>
+            </dd>
+            <dt>_blank</dt>
+            <dd>opens the document in a new window or tab <br>
+                blank attribute = <a href="https://cybrom.com/" target="_blank">Open in new tab</a>
+            </dd>
+            <dt>_parent</dt>
+            <dd>opens the document in the parent frame <br>
+                parent attribute = <a href="https://cybrom.com/" target="_parent">Open in parent frame</a>
+            </dd>
+            <dt>_top</dt>
+            <dd>opens the document in th full body of the window <br>
+                top attribute = <a href="https://cybrom.com/" target="_top">Open in full window</a>
+            </dd>
+        </dl>
+
+        <!-- external link -->
+        <h3>External Link</h3>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">Learn HTML</a><br>
+        <a href="https://www.google.com/" target="_blank">Google</a><br>
+
+        <!-- Internal link -->
+        <h3>Internal Link</h3>
+        <a href="new.html" target="_blank">New window</a><br>
+        <a href="img1.jpeg" target="_blank">Veiw Image</a>
+        <hr>
+
+        <!-- -----------------------Form tag---------------------- -->
+        <h2 class="subHeading">Form tag in HTML</h2>
+        <p>form tag is used to create an HTML form for user input. <br>
+            The form element can contain one or more of the following form elements.</p>
+        <ul>
+            <li>input</li>
+            <li>textarea</li>
+            <li>button</li>
+            <li>select</li>
+            <li>option</li>
+            <li>optgroup</li>
+            <li>fieldset</li>
+            <li>label</li>
+            <li>output</li>
+        </ul>
+
+        <dl>
+            <dt><strong>Label tag :</strong></dt>
+            <dd>label tag is use to give the label to the input element.</dd>
+
+            <dt><strong>for attribute :</strong></dt>
+            <dd>The for attribute specifies which form element a label is bound to. <br>
+                id from the input element is written in for attribute. it is use to make </dd>
+
+            <dt><strong>Input tag :</strong></dt>
+            <dd>The input tag specifies an input field where the user can enter data. <br>
+                input element is the most important form element. <br>
+                The input element can be displayed in several ways , depending on the type attribute.</dd>
+        </dl>
+
+        <p>
+            input type button <br>
+            input type checkbox <br>
+            input type color <br>
+            input type date <br>
+            input type datetime-local <br>
+            input type email <br>
+            input type file <br>
+            input type hidden <br>
+            input type image <br>
+            input type month <br>
+            input type number <br>
+            input type password <br>
+            input type radio <br>
+            input type range <br>
+            input type reset <br>
+            input type search <br>
+            input type submit <br>
+            input type tel <br>
+            input type text <br>
+            input type time <br>
+            input type url <br>
+            input type week <br>
+
+
+        </p>
+
+        <!-- ----------------Form--------------------- -->
+
+        <form action="">
+            <div>
+                <label for="name">Name :
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <br />
+            <div>
+                <label for="psw">Password : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="psw" placeholder="Enter Your Password" />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email :
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" id="email" placeholder="Enter your email id" />
+            </div>
+            <br />
+            <div>
+                <label for="age">Age :
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" id="age" placeholder="Enter your age" />
+            </div>
+            <br>
+            <div>
+                <label for="dob">Date of Birth : </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" id="dob">
+            </div>
+            <br>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset">Reset</button>
+            </div>
+            <br>
+            <div>
+                <label for="message">Message :</label><br>
+                <textarea name="message" id="message" placeholder="Enter Message" rows="8" cols="30"></textarea>
+            </div>
+
+        </form>
+
+        <br><br>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        &nbsp; &nbsp;
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <br /><br />
+
+        <!-----------------------Download attribute---------------------->
+        <p><strong>download attribute :</strong> download attribute in a tag is used for download the file or image.
+        </p>
+        <!-- image link -->
+        <a href="img1.jpeg" target="_blank">View Image</a>&nbsp; &nbsp;
+        <a href="img1.jpeg" download="image">download the image</a><br /><br />
+
+        <!-- internal link -->
+
+        <a href="new.html" target="_blank">New file</a>&nbsp; &nbsp;
+        <a href="mailto:0173cs191016@gmail.com">Send Email</a>&nbsp; &nbsp;
+        <a href="tel:+91 8827709028">Call Us</a><br /><br />
+        <!-- ------------------- -->
+        <form action="">
+            <div>
+                <label for="name">Name : </label>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                <input type="text" id="name" placeholder="Enter you name" />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email : </label>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                &nbsp;
+                <input type="email" id="email" placeholder="Enter your email I'd" />
+            </div>
+            <br />
+            <div>
+                <label for="PSW">Password : </label>&nbsp; &nbsp;
+                <input type="password" id="PSW" placeholder="Enter your Password" />
+            </div><br>
+            <div>
+                <button type="submit">Submit</button>&nbsp; &nbsp;<button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <br>
+        <h3 class="sub_Heading">Input type radio</h3>
+        <p>Use label and input element <br>
+            bind the label and input element by name and for attribute. <br>
+            take same name attribute for all input options. <br>
+            take different id and value for all input options. <br>
+            <strong>value attribute</strong> in input element is use to connect with backend file
+        </p>
+
+        <div>
+            <label for="gender">Gender : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="male" value="male">Male
+            <input type="radio" name="gender" id="female" value="female">Female
+            <input type="radio" name="gender" id="other" value="other">Other
+        </div>
+
+        <h3 class="sub_Heading">Input type Checkbox</h3>
+        <p>checkbox are used to let a user select one or more option of a limited number of choices. <br>
+            Here different name and id values for all input field.</p>
+        <div>
+            <div>
+                <label for="hobbies">Hobbies : </label> &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="sing" id="singing">Singing
+                <input type="checkbox" name="dance" id="dance">Dance
+                <input type="checkbox" name="sketch" id="sketch">Sketching
+
+            </div>
+
+            <h3 class="sub_Heading">Select element in HTML</h3>
+            <p>select element is used to create a drop down list. <br>
+                select element is most often used in a form , to collect user input. <br>
+                name attribute is needed to reference the form data after the form is submitted <br>
+                (if you omit the name attribute, no data from the drop down list will be submitted)</p>
+
+            <div>
+                <label for="course">Select Course :</label>&nbsp; &nbsp;&nbsp;&nbsp;
+                <select id="course">
+                    <option value="Frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="UI/UX">UI/UX</option>
+                </select>
+            </div>
+
+            <br>
+            <!-- --------------------optgroup tag-------------------- -->
+            <h3 class="sub_Heading">optgroup tag :</h3>
+            <p>optgroup tag is used to group related option in a select element (drop-down list).</p>
+
+            <div>
+                <label for="cars">Choose Car :</label>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <select name="car" id="cars">
+                    <optgroup label="swedish cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                    </optgroup>
+                    <optgroup label="German Cars">
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <br>
+            <!-- ----------------------data list tag ------------------- -->
+            <h3 class="sub_Heading">datalist tag :</h3>
+            <p>The datalist tag specifies a list of pre-defined option for an input element. <br>
+                datalist tag is used to provide an autocomplete feature for input element <br>
+                User will see a drop down list of pre-defined options as they input data.</p>
+            <div>
+                <label for="vehicle">Select Vehicle</label>
+                <input type="text" id="Vehicle" list="cars">
+                <datalist id="cars">
+                    <option value="BMW">BMW</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Rang-Rover">Rang-Rover</option>
+                </datalist>
+
+            </div> <br>
+            <hr>
+
+            <!-- -----------------------------------Table tag in HTML --------------------------------- -->
+
+            <h2 class="subHeading">Table Tag in HTML </h2>
+            <p>A table in HTML consists of table cells inside rows and coulumns. <br>
+                Each table cell is defined by a td tag. <br>
+                td stands for table data</p>
+            <p>
+                <strong>border attribute</strong> in Table tag is use to give the border to the table. <br>
+                The <strong>cellpadding</strong> use for padding in each cell of a table. <br>
+                The <strong>colspan</strong> attribute defines the number of columns a table cell should span. <br>
+                the value of the colspan attribute represents the number of columns to span. <br>
+                The <strong>rowspan</strong> attribute specifies the number of row a cell should span. <br>
+                The value of rowspan attribute represents the number of rows to span.
+            </p>
+
+            <table border="5px" cellpadding="20px">
+                <tr>
+                    <th>No.</th>
+                    <th>Full Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Founder Microsoft</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Founder Apple</td>
+                    <td>$1200</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <!-- -----------------------------marquee tag---------------------------- -->
+            <h2 class="subHeading">marquee tag in HTML</h2>
+            <p>The marquee tag in HTML is used to create a scrolling piece of text or an image It can scroll in
+                various
+                direction , <br>
+                such as left , right , up, or down. <br>
+
+            </p>
+
+
+            <br><br>
+            <strong>Marquee Tag Attribute</strong>
+            <br> <br>
+            <table border="5px" cellpadding="20px">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Values</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Direction</td>
+                    <td>left , right , Up , down</td>
+                    <td>Specifies the direction in which the marquee content scrolls.</td>
+                </tr>
+                <tr>
+                    <td>Behavior</td>
+                    <td>Scroll , slide , alternate</td>
+                    <td>Defines the type of movements of the marquee. <br>
+                        <strong>'scroll'</strong> is the default behavior, causing the content to scroll
+                        endlessly.<br>
+                        <strong>'slide'</strong> makes th content slide in and stop. in which the text stop at the
+                        end
+                        edge <br>
+                        <strong>'alternate'</strong> cause the content to bounce back and forth
+                    </td>
+                </tr>
+                <tr>
+                    <td>Scrollamount</td>
+                    <td>number</td>
+                    <td>sets the amount of the scrolling at each interval in pixel. <br>
+                        Higher values in faster scrolling</td>
+                </tr>
+                <tr>
+                    <td>scrolldelay</td>
+                    <td>number</td>
+                    <td>sets the delay in miliseconds between each movement. <br>
+                        Higher values result in slower scrolling</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>number</td>
+                    <td>specifies the number of times the marquee should loop. the default is infinite.</td>
+                </tr>
+                <tr>
+                    <td>bgcolor</td>
+                    <td>color</td>
+                    <td>sets the background color of the marquee . you can use the color name or hex code .</td>
+                </tr>
+            </table>
+            <br>
+
+
+            <h3>Scroll behavior</h3>
+            <marquee behavior="scroll" direction="right" scrollamount="10" scrolldelay="300" bgcolor="skyblue">
+                <strong>This is scrolling text</strong>
+            </marquee>
+
+            <h3>Slide behavior</h3>
+            <marquee behavior="Slide" direction="right" scrollamount="10" scrolldelay="300" bgcolor="skyblue">
+                <strong>This is scrolling text</strong>
+            </marquee>
+
+            <h3>Alternate behavior</h3>
+            <marquee behavior="alternate" direction="right" scrollamount="10" scrolldelay="300" bgcolor="skyblue">
+                <strong>This is scrolling text</strong>
+            </marquee>
+            <br>
+            <br>
+            <hr>
+            <h3>Right Direction</h3>
+            <marquee behavior="alternate" direction="right" scrollamount="10" scrolldelay="300" bgcolor="skyblue">
+                <strong>This is scrolling text in Right direction</strong>
+            </marquee>
+
+            <h3>left Direction</h3>
+            <marquee behavior="alternate" direction="left" scrollamount="10" scrolldelay="300" bgcolor="skyblue">
+                <strong>This is scrolling text in left direction</strong>
+            </marquee>
+
+            <h3>Up Direction</h3>
+            <marquee behavior="alternate" direction="up" height="100" scrollamount="10" scrolldelay="300"
+                bgcolor="skyblue">
+                <strong>This is scrolling text in UP direction</strong>
+            </marquee>
+
+            <h3>Down Direction</h3>
+            <marquee behavior="alternate" direction="down" height="100" scrollamount="10" scrolldelay="300"
+                bgcolor="skyblue">
+                <strong>This is scrolling text in Down direction</strong>
+            </marquee>
+            <br>
+            <hr>
+
+            <!-- -------------------------Audio tag in html------------------------- -->
+            <h2 class="subHeading">Audio Tag in HTML</h2>
+            <p>The audio tag is used to embed sound content in a document , such as music or other audio streams.
+                <br>
+                Tge audio tag contains one or more <strong>source tags</strong> with different audio sources. The
+                browser will choose the first source it supports. <br>
+                The text between the audio tag will only be displayed in browser that do not support the audio
+                element.
+            </p>
+            <strong>There are three supported audio formats in HTML : MP3, WAV, and OGG.</strong>
+            <br><br>
+
+            <table align="center" border="1px" cellpadding="12px" style="text-align: center;">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>autoplay</td>
+                    <td>specifies that the audio will start playing as soon as it is ready.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>controls</td>
+                    <td>Specifies that audio controls should be displayed <br>
+                        such as play/pause button etc</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>loop</td>
+                    <td>Specifies that the audio will start over again , every time it is finished</td>
+                </tr>
+                <tr>
+                    <td>muted</td>
+                    <td>muted</td>
+                    <td>Specifies that the audio output should be muted.</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>URL</td>
+                    <td>Specifies the URL of the audio file</td>
+                </tr>
+            </table>
+            <br><br>
+            <div align="center">
+                <audio controls loop>
+                    <source src="vid1.mp4">
+                </audio> <br><br>
+
+            </div>
+            <hr>
+
+            <!-- ------------------------Video tag in html------------------------ -->
+            <h2 class="subHeading">Video Tag in HTML</h2>
+            <p>The Video tag is used to embed Video content in a document , such as movie clip or other video
+                streams.
+                <br>
+                The video tag contains one or more <strong>source tags</strong> with different video sources. <br>
+                The browser will choose the first source it support.
+            </p>
+            <strong>
+                There are three supported video formats in HTML : MP4, WebM, and OGG.
+            </strong>
+            <br><br>
+
+            <table align="center" border="1px" cellpadding="12px" style="text-align: center;">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>autoplay</td>
+                    <td>specifies that the video will start playing as soon as it is ready.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>controls</td>
+                    <td>Specifies that audio controls should be displayed <br>
+                        such as play/pause button etc</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>loop</td>
+                    <td>Specifies that the video will start over again , every time it is finished</td>
+                </tr>
+                <tr>
+                    <td>muted</td>
+                    <td>muted</td>
+                    <td>Specifies that the audio output should be muted.</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>URL</td>
+                    <td>Specifies the URL of the audio file</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>pixels</td>
+                    <td>sets the height of the video player</td>
+                </tr>
+                <tr>
+                    <td>poster</td>
+                    <td>URL</td>
+                    <td>Specifies an image to be shown while the video is downloading or untill the user hits the
+                        play
+                        button.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>pixels</td>
+                    <td>Sets the width of the video player.</td>
+                </tr>
+            </table>
+            <br><br>
+
+            <div align="center">
+                <video controls loop poster="downloading" width="300px" height="300px">
+                    <source src="vid1.mp4" />
+                </video>
+            </div>
+
+            <hr>
+
+            <!-- -----------------------Utube video in html-------------------- -->
+            <h2 class="subHeading">Utube video in HTML</h2>
+            <p>To play the video on a web page, do the following:</p>
+            <ul>
+                <li>Upload the video to YouTube</li>
+                <li>go to share option</li>
+                <li>Click on Embed option</li>
+                <li>Copy the iframe or HTML code</li>
+                <li>Paste the code inside a body tag</li>
+            </ul>
+            <div align="center">
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/YQi6sZnFtdQ?si=J1ltYSej0TVHtL3h"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>&nbsp;&nbsp;
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/v4BrIX-pFTM?si=8NaQzjfhkoRRezGQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <hr>
+
+            <!-- ---------------------google map-------------------- -->
+            <h2 class="subHeading">Google Map in HTML</h2>
+            <p><strong>Google Maps API(Application Programming Interface)</strong></p>
+            <p>Step By Step</p>
+            <ul>
+                <li>Go to google map(Open google map in your web browser)</li>
+                <li>Find the location (Search for the location you want to embed)</li>
+                <li>Get the Embed code</li>
+                <li>Click the share button</li>
+                <li>Click on the "Embed a map" tab</li>
+                <li>You will see an iframe code.</li>
+                <li>Click on "Copy HTML" to copy the iframe code to your clipboard.</li>
+                <li>Paste the copied iframe code into your HTML file where you want the map to appear.</li>
+            </ul>
+            <div align="center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.292897904878!2d77.43007149999998!3d23.232426349999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42674cd1e311%3A0x5de763e9d7cd5c51!2sDB%20Mall%2C%20Zone-I%2C%20Maharana%20Pratap%20Nagar%2C%20Bhopal%2C%20Madhya%20Pradesh%20462016!5e0!3m2!1sen!2sin!4v1720023700211!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <hr>
+
+            <!-- ------------------------progress tag------------------- -->
+            <h2 class="subHeading">Progress Bar in HTML</h2>
+            <p>The Progress tag represents the completion progress of a task <br>
+                always add label tag for best accessibility practices</p>
+            <br>
+            <label for="file">Downloading Progress : </label>
+            <progress id="file" value="60" max="100"></progress> 60%
+            <br>
+
+            <hr>
+
+            <!-- ----------------------fontawesome------------------------------- -->
+            <h2 class="subHeading">Fontawesome Icons in HTML</h2>
+            <p>Step By Step :-</p>
+            <ul>
+                <li>Open fontawesome cdn in your browser.</li>
+                <li>copy the first HTML code line</li>
+                <li>paste that link in your HTML file at top head </li>
+                <li>again open fontawesome icon in your browser</li>
+                <li>search the icon </li>
+                <li>click on the icon you want to display on your web page</li>
+                <li>copy the HTML code</li>
+                <li>paste that code in your HTML file, where you want to display the icon</li>
+            </ul>
+            <p align="center">
+                <i class="fa-brands fa-whatsapp fa-2xl"></i>&nbsp; &nbsp;
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+            </p>
+            <br>
+            <hr>
+
+            <!-- -------------------Using Sementic tags--------------------------- -->
+            <h2 class="subHeading">Using Sementic Tags in HTML</h2>
+            <p>A semantic element clearly describes its meaning to both the browser and the developer
+                <br><strong>Example</strong>
+            </p>
+            <dl>
+                <dt><strong>Non-Semantic element</strong></dt>
+                <dd>div and span Tells nothing about its content</dd>
+                <dt><strong>Semantic element</strong></dt>
+                <dd>form , table , article clearly defines its content.</dd>
+            </dl>
+
+            <table align="center" border="1px" cellpadding="10px">
+                <tr>
+                    <td colspan="3">HEADER</td>
+                </tr>
+                <tr>
+                    <td colspan="3">NAV</td>
+                </tr>
+                <tr>
+                    <td colspan="2">SECTION</td>
+                    <td rowspan="2">ASIDE</td>
+                </tr>
+                <tr>
+                    <td>ARTICLE</td>
+                </tr>
+                <tr>
+                    <td colspan="3">FOOTER</td>
+                </tr>
+            </table>
+
+
+            <div id="semantic">
+
+                <header>
+                    <h1>This is Header</h1>
+                </header>
+                <hr>
+                <nav>
+                    <h3>Navbar</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <hr>
+                <section>
+                    <h3>Section</h3>
+                </section>
+                <hr>
+                <article>
+                    <h3>article</h3>
+                </article>
+                <hr>
+                <aside>
+                    <h3>Aside</h3>
+                </aside>
+                <hr>
+                <footer>
+                    <h3>This is footer</h3>
+                </footer>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>
